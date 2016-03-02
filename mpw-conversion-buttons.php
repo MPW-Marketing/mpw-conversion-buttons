@@ -19,4 +19,4 @@ $cont .= '</div>';
 return $cont;
 }
 
-add_shortcode( $'conv_button' , 'mpw_conv_button' );
+add_shortcode( 'conv_button' , 'mpw_conv_button' );
