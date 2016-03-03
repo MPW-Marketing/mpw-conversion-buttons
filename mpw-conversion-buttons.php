@@ -2,7 +2,7 @@
 /*
 Plugin Name: MPW Convversion Buttons
 Description: Shortcode for conversion buttons
-Version: 0.1.0
+Version: 0.1.5
 */
 
 function mpw_conv_button ( $atts ) {

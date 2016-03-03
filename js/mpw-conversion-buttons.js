@@ -3,7 +3,7 @@ jQuery('.conv-btn').click(function(e){
 	if(jQuery(this).children("a").prop("target") === "_blank"){
 		window.open(jQuery(this).children("a").prop("href"),"_blank");
 	} else {
-		window.open(jQuery(this).children("a").prop("href"));
+		window.location.href = jQuery(this).children("a").prop("href");
 	}	
 }
 );
