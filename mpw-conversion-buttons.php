@@ -13,8 +13,7 @@ function mpw_conv_button ( $atts ) {
 		'target' => '',
 		), $atts));
 $cont = '';
-$cont .= '<div class="conv-btn '.$add_class.'"
-window.open(\''.$link.'\',\'_blank\'">';
+$cont .= '<div class="conv-btn '.$add_class.'" onclick="location.href=\''.$link.'\'">';
 $cont .= '<a href="'.$link.'"';
 if ($target !== ''){ $cont .= 'target="'.$target.'"';}
 $cont .= '>'.$text.'</a>';
