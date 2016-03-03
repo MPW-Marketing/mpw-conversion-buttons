@@ -13,7 +13,10 @@ function mpw_conv_button ( $atts ) {
 		'target' => '',
 		), $atts));
 $cont = '';
-$cont .= '<div class="conv-btn '.$add_class.'" onclick="location.href=\''.$link.'\'">';
+$cont .= '<script>'
+$cont .= '<div class="conv-btn '.$add_class;
+ if ($target == '_blank'){ $cont .= ' new-win';}
+ $cont .= '">';
 $cont .= '<a href="'.$link.'"';
 if ($target !== ''){ $cont .= 'target="'.$target.'"';}
 $cont .= '>'.$text.'</a>';
@@ -23,3 +26,7 @@ return $cont;
 }
 
 add_shortcode( 'conv_button' , 'mpw_conv_button' );
+
+function click_code () {
+	$cont = '<script>jQuery(".conv-btn.new-win").click(function(e){e.preventDefault(); window.open(jQuery(this).children(a).prop("href"),"_blank");});</script>'
+}
