@@ -13,7 +13,6 @@ function mpw_conv_button ( $atts ) {
 		'target' => '',
 		), $atts));
 $cont = '';
-$cont .= '<script>'
 $cont .= '<div class="conv-btn '.$add_class;
  if ($target == '_blank'){ $cont .= ' new-win';}
  $cont .= '">';
