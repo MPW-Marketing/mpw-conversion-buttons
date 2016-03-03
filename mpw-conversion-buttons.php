@@ -12,8 +12,8 @@ function mpw_conv_button ( $atts ) {
 		'add_class' => '',
 		), $atts));
 $cont = '';
-$cont .= '<div class="conv-btn '.$add_class.'" onclick="location.href=\'/'.$link.'\'">';
-$cont .= '<a href="/'.$link.'">'.$text.'</a>';
+$cont .= '<div class="conv-btn '.$add_class.'" onclick="location.href=\''.$link.'\'">';
+$cont .= '<a href="'.$link.'">'.$text.'</a>';
 $cont .= '</div>';
 
 return $cont;
