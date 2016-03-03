@@ -26,6 +26,7 @@ return $cont;
 
 add_shortcode( 'conv_button' , 'mpw_conv_button' );
 
-function click_code () {
-	$cont = '<script>jQuery(".conv-btn.new-win").click(function(e){e.preventDefault(); window.open(jQuery(this).children(a).prop("href"),"_blank");});</script>'
+function mpw_conv_scripts_method() {
+    wp_enqueue_script( 'mpw-conv', plugins_url( '/js/mpw-conversion-buttons.js' , __FILE__ ), array( 'jquery' ), '1.0', true );
 }
+add_action( 'wp_enqueue_scripts', 'mpw_conv_scripts_method' );
